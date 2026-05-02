@@ -1,0 +1,139 @@
+:root {
+    --main-text-color: #fff;
+    --light-text-color: #ccc;
+    --main-color: #064d4f;
+    --second-color: #f7c206;
+    --bg-color: #f4f6f6;
+    --border-radius: 15px;
+    --max-width: 1600px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: "Supermercado One", sans-serif;
+    background-color: var(--bg-color);
+}
+
+.active {
+    border-bottom: 2px solid var(--second-color);
+    color: var(--main-text-color) !important;
+}
+
+.container {
+    width: calc(100% - 40px);
+    max-width: var(--max-width);
+    margin: 0 auto;
+}
+
+header {
+    margin: 20px 0;
+}
+
+header .container {
+    padding: 20px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: var(--border-radius);
+    background-color: var(--main-color);
+}
+
+header .container .logo a {
+    font-size: 42px;
+    text-decoration: none;
+    color: var(--main-text-color);
+}
+
+header .container .logo a span {
+    color: var(--second-color);
+}
+
+header .container nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+header .container nav ul li a {
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 500;
+    transition: 0.3s;
+    color: var(--light-text-color);
+}
+
+header .container nav ul li a:hover {
+    border-bottom: 2px solid var(--second-color);
+    color: var(--main-text-color);
+}
+
+header .container .user {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+header .container .user .cart,
+header .container .user .user-profile {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: #000;
+}
+
+header .container .user .cart {
+    padding: 15px 20px;
+    border-radius: 50px;
+    background-color: var(--second-color);
+}
+
+header .container .user .user-profile {
+    padding: 20px;
+    border-radius: 50%;
+    background-color: var(--main-text-color);
+}
+
+header .container .user i {
+    font-size: 20px;
+}
+
+footer .container {
+    margin-top: 40px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    border-radius: var(--border-radius) var(--border-radius) 0 0;
+    background-color: var(--main-color);
+}
+
+footer .container .logo a {
+    font-size: 32px;
+    text-decoration: none;
+    color: var(--main-text-color);
+}
+
+footer .container .logo a span {
+    color: var(--second-color);
+}
+
+footer .container p {
+    color: var(--second-color);
+}
+
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px;
+    }
+}

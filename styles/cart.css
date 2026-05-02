@@ -1,0 +1,149 @@
+body {
+    scroll-behavior: smooth;
+    font-family: "Supermercado One", sans-serif;
+    background-color: var(--bg-color);
+}
+
+.cart-layout {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 30px;
+    align-items: start;
+    margin-top: 40px;
+}
+
+.cart-items-section,
+.cart-summary-section {
+    background-color: var(--main-text-color);
+    padding: 30px;
+    border-radius: var(--border-radius);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+h2 {
+    color: var(--main-color);
+    margin-bottom: 20px;
+    font-size: 30px;
+    border-bottom: 2px solid var(--bg-color);
+    padding-bottom: 10px;
+}
+
+.cart-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: var(--bg-color);
+}
+
+.cart-item img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.item-info {
+    flex: 1;
+    margin-left: 20px;
+}
+
+.item-info h3 {
+    color: var(--main-color);
+    font-size: 22px;
+}
+
+.item-info p {
+    color: #666;
+    font-size: 18px;
+}
+
+.remove-btn {
+    background-color: #dd2e44;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.remove-btn:hover {
+    background-color: #b01f31;
+}
+
+.summary-box {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-size: 18px;
+}
+
+.summary-row {
+    display: flex;
+    justify-content: space-between;
+    color: #555;
+}
+
+.total-row {
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--main-color);
+}
+
+hr {
+    border: none;
+    border-top: 2px dashed #ccc;
+    margin: 10px 0;
+}
+
+.checkout-btn {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: var(--second-color);
+    color: #000;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    font-family: inherit;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.checkout-btn:hover {
+    background-color: var(--main-color);
+    color: #fff;
+}
+
+.empty-cart {
+    text-align: center;
+    color: #888;
+    font-size: 20px;
+    padding: 40px 0;
+}
+
+@media (max-width: 900px) {
+    .cart-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .cart-item {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+
+    .item-info {
+        margin-left: 0;
+    }
+}

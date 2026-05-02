@@ -1,0 +1,152 @@
+body {
+    scroll-behavior: smooth;
+    font-family: "Supermercado One", sans-serif;
+    background-color: var(--bg-color);
+}
+
+.hero .container {
+    padding: 100px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 40px;
+    border-radius: var(--border-radius);
+    background: url(https://i.pinimg.com/736x/fe/7b/fa/fe7bfa12d0cdf1c70a353a52ee6d88e1.jpg) center/cover no-repeat;
+    background-color: var(--main-color);
+    background-blend-mode: multiply;
+}
+
+.hero .container h1 {
+    max-width: 550px;
+    font-size: 60px;
+    color: var(--main-text-color);
+}
+
+.hero .container p {
+    max-width: 550px;
+    font-size: 25px;
+    color: var(--second-color);
+}
+
+.hero .container a {
+    padding: 15px 20px;
+    background-color: #bbeb75;
+    border-radius: var(--border-radius);
+    text-decoration: none;
+    color: #000;
+    font-size: 25px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+main .container h2,
+.items .container h2 {
+    margin: 40px 0;
+    font-size: 40px;
+    color: var(--main-color);
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.category-card {
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: var(--border-radius);
+    background-color: var(--main-text-color);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.item {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    border-radius: var(--border-radius);
+    background-color: var(--main-text-color);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.item img {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+.item h3,
+.item h4 {
+    color: var(--main-color);
+}
+
+.item p {
+    color: #888;
+}
+
+.item button {
+    width: 100%;
+    padding: 15px 20px;
+    border-radius: 10px;
+    border: none;
+    color: var(--main-text-color);
+    background-color: var(--main-color);
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.item button:hover {
+    background-color: var(--second-color);
+    color: #000;
+}
+
+.item-actions {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    align-items: stretch;
+}
+
+.qty-input {
+    width: 70px;
+    padding: 10px;
+    border: 2px solid var(--second-color);
+    border-radius: 10px;
+    text-align: center;
+    font-family: inherit;
+    font-size: 18px;
+    outline: none;
+    background-color: var(--main-text-color);
+    color: var(--main-color);
+}
+
+.qty-input:focus {
+    border-color: var(--main-color);
+}
+
+.item-actions button {
+    flex: 1;
+    padding: 15px 20px;
+    border-radius: 10px;
+    border: none;
+    color: var(--main-text-color);
+    background-color: var(--main-color);
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.item-actions button:hover {
+    background-color: var(--second-color);
+    color: #000;
+}

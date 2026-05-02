@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Storage Management - ALL IN ONE</title>
+    <!-- external fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Supermercado+One&display=swap" rel="stylesheet">
+
+    <!-- external css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- internal css -->
+    <link rel="stylesheet" href="styles/global.css">
+    <link rel="stylesheet" href="styles/storage.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">ALL - <span>IN</span> - ONE</a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="home.html">Back to Store</a></li>
+                    <li><a href="#" class="active">Storage Panel</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="storage-page">
+        <div class="container">
+
+            <section class="add-item-section">
+                <h2>Add New Product</h2>
+                <form id="add-product-form">
+                    <div class="input-row">
+                        <input type="text" id="new-name" placeholder="Product Name (e.g. Apple)" required>
+                        <input type="number" id="new-price" placeholder="Price (e.g. 2.50)" step="0.01" required>
+                    </div>
+                    <div class="input-row">
+                        <input type="number" id="new-qty" placeholder="Available Qty (e.g. 10)" required>
+                        <input type="url" id="new-image" placeholder="Image URL (https://...)" required>
+                    </div>
+                    <button type="submit" class="admin-btn">Add to item</button>
+                </form>
+            </section>
+
+            <hr class="divider">
+
+            <section class="manage-inventory-section">
+                <h2>Current Inventory</h2>
+                <div class="inventory-grid" id="inventory-container">
+                    <p>Loading inventory...</p>
+                </div>
+            </section>
+
+            <hr class="divider">
+
+            <section class="incoming-orders-section">
+                <h2>Incoming Orders</h2>
+                <div class="inventory-grid" id="orders-container">
+                    <p>Loading orders...</p>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <script type="module" src="scripts/storage.js"></script>
+</body>
+
+</html>

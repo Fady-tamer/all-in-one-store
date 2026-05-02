@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login / Sign Up - ALL IN ONE</title>
+
+    <!-- external fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Supermercado+One&display=swap" rel="stylesheet">
+
+    <!-- external css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- internal css -->
+    <link rel="stylesheet" href="styles/global.css">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="container" style="justify-content: center;">
+            <div class="logo">
+                <a href="index.html">ALL - <span>IN</span> - ONE</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="auth-page">
+        <div class="auth-container">
+
+            <form id="login-form" class="auth-form active-form">
+                <h2>Welcome Back</h2>
+
+                <div class="input-group">
+                    <label for="login-email">Email</label>
+                    <input type="email" id="login-email" placeholder="Enter your email" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="login-password">Password</label>
+                    <input type="password" id="login-password" placeholder="Enter your password" required>
+                </div>
+
+                <button type="submit" class="auth-btn">Login</button>
+
+                <p class="toggle-text">Don't have an account? <span onclick="toggleForms()">Sign up here</span></p>
+            </form>
+
+            <form id="signup-form" class="auth-form" style="display: none;">
+                <h2>Create Account</h2>
+
+                <div class="input-group">
+                    <label for="signup-name">Full Name</label>
+                    <input type="text" id="signup-name" placeholder="Enter your name" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="signup-email">Email</label>
+                    <input type="email" id="signup-email" placeholder="Enter your email" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="signup-password">Password</label>
+                    <input type="password" id="signup-password" placeholder="Create a password" required>
+                </div>
+
+                <button type="submit" class="auth-btn">Sign Up</button>
+
+                <p class="toggle-text">Already have an account? <span onclick="toggleForms()">Login here</span></p>
+            </form>
+
+        </div>
+    </main>
+    <script type="module" src="scripts/script.js"></script>
+</body>
+
+</html>
