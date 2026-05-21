@@ -102,11 +102,10 @@ firestore/
 ---
 
 ## 👥 Team
-
-| Name | Role |
-|---|---|
-| Fady Tamer | Frontend Development & Firebase Integration |
-| Adham | System Design, Flowcharts, Diagrams & Database Schema |
+- Fady Tamer — [LinkedIn](https://linkedin.com/in/fady-tamer) · [Portfolio](https://fady-tamer-portfolio.vercel.app)
+- Adham abdelmnem — [LinkedIn](https://www.linkedin.com/in/adham-abdelmnem-662843340/)
+- Mohamed marzouk — [LinkedIn](https://www.linkedin.com/in/mohamed-marzouk-445255408/)
+- Eslam mohamed — [LinkedIn](https://www.linkedin.com/in/eslam-mohamed-657693407/)
 
 ---
 
